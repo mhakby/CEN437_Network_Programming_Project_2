@@ -1,0 +1,4 @@
+# No extrnal packages are need.
+# The project only use the Python standard library (tested with Python 3.11.8, needs Python 3.8+):
+# socket, threading, json, argparse, hashlib, base64, struct, time, datetime, os
+# The monitor page needs a browser with WebSocket support (Chrome, Edge, Firefox vs).
