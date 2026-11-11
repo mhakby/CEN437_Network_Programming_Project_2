@@ -1,0 +1,76 @@
+2026-11-11 15:15:06 === Server started: chat=127.0.0.1:5050 relay=5051 monitor=127.0.0.1:8080 ===
+2026-11-11 15:15:16 [CONNECT] New connection from 127.0.0.1:60784 (direct)
+2026-11-11 15:15:16 [JOIN] Mhakby (127.0.0.1:60784) joined the chat. Online users: 1
+2026-11-11 15:15:22 [CONNECT] New connection from 127.0.0.1:60785 (direct)
+2026-11-11 15:15:22 [JOIN] Ali (127.0.0.1:60785) joined the chat. Online users: 2
+2026-11-11 15:15:42 [PUBLIC] from=Mhakby to=ALL text='Hello, How are you Ali?'
+2026-11-11 15:16:22 [PUBLIC] from=Ali to=ALL text='Hi, Thanks.. I am fine. What about you ?'
+2026-11-11 15:16:33 [PUBLIC] from=Mhakby to=ALL text='so far so good brother !'
+2026-11-11 15:22:21 [CONNECT] New connection from 127.0.0.1:62556 (direct)
+2026-11-11 15:22:21 [JOIN] Ayşe (127.0.0.1:62556) joined the chat. Online users: 3
+2026-11-11 15:23:55 [PRIVATE] from=Mhakby to=Ali text='secret message!'
+2026-11-11 15:26:58 [PUBLIC] from=Ayşe to=ALL text='selamlar'
+2026-11-11 15:27:04 [LEAVE] Ayşe (127.0.0.1:62556) left the chat. Online users: 2
+2026-11-11 15:27:29 [PRIVATE_FAIL] from=Mhakby to=Ayşe (user not online)
+2026-11-11 15:28:49 [CONNECT] New connection from 127.0.0.1:50827 (direct)
+2026-11-11 15:28:49 [JOIN] Ali2 (127.0.0.1:50827) joined the chat (requested 'Ali' was taken). Online users: 3
+2026-11-11 15:31:11 [CONNECT] New connection from 127.0.0.1:59321 (direct)
+2026-11-11 15:31:11 [ERROR] Registration rejected for 127.0.0.1:59321 (nick=*Ali): Nicknames starting with * are reserved for relay users
+2026-11-11 15:31:11 [DISCONNECT] 127.0.0.1:59321 disconnected before registration
+2026-11-11 15:31:59 [ERROR] Connection error with Ali2 (127.0.0.1:50827): [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+2026-11-11 15:31:59 [LEAVE] Ali2 (127.0.0.1:50827) left the chat. Online users: 2
+2026-11-11 15:32:26 [CONNECT] New connection from 127.0.0.1:59323 (direct)
+2026-11-11 15:32:26 [ERROR] Registration rejected for 127.0.0.1:59323 (nick=*Ali): Nicknames starting with * are reserved for relay users
+2026-11-11 15:32:26 [DISCONNECT] 127.0.0.1:59323 disconnected before registration
+2026-11-11 15:35:33 [LEAVE] Ali (127.0.0.1:60785) left the chat. Online users: 1
+2026-11-11 15:36:37 [CONNECT] New connection from 127.0.0.1:62805 (direct)
+2026-11-11 15:36:37 [JOIN] Ali (127.0.0.1:62805) joined the chat. Online users: 2
+2026-11-11 15:36:53 [LEAVE] Ali (127.0.0.1:62805) left the chat. Online users: 1
+2026-11-11 15:36:58 [CONNECT] New connection from 127.0.0.1:62809 (direct)
+2026-11-11 15:36:58 [JOIN] Ali (127.0.0.1:62809) joined the chat. Online users: 2
+2026-11-11 15:37:04 [ERROR] Connection error with Ali (127.0.0.1:62809): [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+2026-11-11 15:37:04 [LEAVE] Ali (127.0.0.1:62809) left the chat. Online users: 1
+2026-11-11 15:38:47 [PUBLIC] from=Mhakby to=ALL text='Hey Ali! Did you left ?'
+2026-11-11 15:40:48 [CONNECT] New connection from 127.0.0.1:50613 (direct)
+2026-11-11 15:40:48 [JOIN] Ahmet (127.0.0.1:50613) joined the chat. Online users: 2
+2026-11-11 15:40:56 [PUBLIC] from=Mhakby to=ALL text='Hey Ahmet !'
+2026-11-11 15:41:02 [PUBLIC] from=Ahmet to=ALL text='Hello Mhakby!'
+2026-11-11 15:41:10 [PUBLIC] from=Ahmet to=ALL text='On an exceptionally hot evening early in July a young man came out of the garret in the S. Place in which he rented and walked slowly, as though in hesitation, towards the K. bridge.'
+2026-11-11 15:41:23 [ERROR] Invalid public message from Ahmet: Message is too long (max 500 characters)
+2026-11-11 15:43:09 [PUBLIC] from=Ahmet to=ALL text='Rate Limit Testing!'
+2026-11-11 15:43:10 [PUBLIC] from=Ahmet to=ALL text='Rate Limit Testing!'
+2026-11-11 15:43:11 [PUBLIC] from=Ahmet to=ALL text='Rate Limit Testing!'
+2026-11-11 15:43:12 [PUBLIC] from=Ahmet to=ALL text='Rate Limit Testing!'
+2026-11-11 15:43:14 [PUBLIC] from=Ahmet to=ALL text='Rate Limit Testing!'
+2026-11-11 15:43:14 [PUBLIC] from=Ahmet to=ALL text='Rate Limit Testing!'
+2026-11-11 15:43:15 [PUBLIC] from=Ahmet to=ALL text='Rate Limit Testing!'
+2026-11-11 15:43:15 [PUBLIC] from=Ahmet to=ALL text='Rate Limit Testing!'
+2026-11-11 15:43:16 [PUBLIC] from=Ahmet to=ALL text='Rate Limit Testing!'
+2026-11-11 15:43:16 [PUBLIC] from=Ahmet to=ALL text='Rate Limit Testing!'
+2026-11-11 15:43:16 [RATE_LIMIT] Ahmet exceeded the limit (5 msg / 5 s), muted for 15 s
+2026-11-11 15:43:16 [RATE_LIMIT] Message from Ahmet rejected, user is muted (15 s left)
+2026-11-11 15:43:23 [RATE_LIMIT] Message from Ahmet rejected, user is muted (8 s left)
+2026-11-11 15:43:27 [RATE_LIMIT] Message from Ahmet rejected, user is muted (4 s left)
+2026-11-11 15:43:29 [RATE_LIMIT] Message from Ahmet rejected, user is muted (3 s left)
+2026-11-11 15:43:37 [PUBLIC] from=Ahmet to=ALL text='Rate Limit Testing!'
+2026-11-11 15:45:12 [MONITOR] Viewer connected from 127.0.0.1:52870
+2026-11-11 15:46:27 [PUBLIC] from=Mhakby to=ALL text='We are testing Chat Server Monitor now!'
+2026-11-11 15:47:00 [PUBLIC] from=Mhakby to=ALL text='This is 22nd message !'
+2026-11-11 15:47:31 [PUBLIC] from=Ahmet to=ALL text='Hey, brother I saw the increment!'
+2026-11-11 15:47:43 [PUBLIC] from=Ahmet to=ALL text='This will be 24th'
+2026-11-11 15:49:46 [PUBLIC] from=Mhakby to=ALL text='And this will be 25th. Only we are online!'
+2026-11-11 15:50:56 [MONITOR] Viewer disconnected 127.0.0.1:52870
+2026-11-11 15:54:22 [ERROR] Connection error with Ahmet (127.0.0.1:50613): [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+2026-11-11 15:54:22 [LEAVE] Ahmet (127.0.0.1:50613) left the chat. Online users: 1
+2026-11-11 15:56:51 [CONNECT] New connection from 127.0.0.1:64679 (relay)
+2026-11-11 15:56:51 [JOIN] *Mehmet (127.0.0.1:64679) joined the chat [via relay]. Online users: 2
+2026-11-11 15:58:00 [PUBLIC] from=*Mehmet to=ALL text='Hello Mhakby!'
+2026-11-11 15:58:12 [PUBLIC] from=Mhakby to=ALL text='Hello Mehmet!'
+2026-11-11 15:58:29 [PRIVATE] from=*Mehmet to=Mhakby text='What are you doing?'
+2026-11-11 15:58:58 [PRIVATE] from=Mhakby to=*Mehmet text='I am working. What about you ?'
+2026-11-11 16:01:24 [LEAVE] *Mehmet (127.0.0.1:64679) left the chat. Online users: 1
+2026-11-11 16:07:05 [MONITOR] Viewer connected from 127.0.0.1:53129
+2026-11-11 16:07:08 [MONITOR] Viewer disconnected 127.0.0.1:53129
+2026-11-11 16:07:08 [MONITOR] Viewer connected from 127.0.0.1:53705
+2026-11-11 16:07:09 [MONITOR] Viewer disconnected 127.0.0.1:53705
+2026-11-11 16:07:09 [MONITOR] Viewer connected from 127.0.0.1:50414

@@ -1,0 +1,4 @@
+2026-11-11 15:56:06 === Relay started on 127.0.0.1:5060 -> 127.0.0.1:5051 ===
+2026-11-11 15:56:51 [CONNECT] Client connected to relay: 127.0.0.1:64678
+2026-11-11 15:56:51 [RELAY] 127.0.0.1:64678 registered as '*Mehmet' (requested). Active relayed clients: 1
+2026-11-11 16:01:24 [DISCONNECT] Relay connection closed for 127.0.0.1:64678 ('*Mehmet'). Active relayed clients: 0

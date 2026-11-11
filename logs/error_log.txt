@@ -1,0 +1,6 @@
+2026-11-11 15:31:11 [ERROR] Registration rejected for 127.0.0.1:59321 (nick=*Ali): Nicknames starting with * are reserved for relay users
+2026-11-11 15:31:59 [ERROR] Connection error with Ali2 (127.0.0.1:50827): [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+2026-11-11 15:32:26 [ERROR] Registration rejected for 127.0.0.1:59323 (nick=*Ali): Nicknames starting with * are reserved for relay users
+2026-11-11 15:37:04 [ERROR] Connection error with Ali (127.0.0.1:62809): [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+2026-11-11 15:41:23 [ERROR] Invalid public message from Ahmet: Message is too long (max 500 characters)
+2026-11-11 15:54:22 [ERROR] Connection error with Ahmet (127.0.0.1:50613): [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
