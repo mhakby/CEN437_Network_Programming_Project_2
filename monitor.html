@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chat Server Monitor</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+    }
+    #log {
+        width: 100%;
+        height: 450px;
+        font-family: Consolas, monospace;
+        font-size: 13px;
+    }
+    .counts {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+</style>
+</head>
+<body>
+    <h2>Chat Server Monitor (read-only)</h2>
+    <p>Connection: <b id="status">connecting...</b></p>
+    <div class="counts">
+        Online users: <b id="users">0</b>
+        &nbsp;|&nbsp;
+        Processed messages: <b id="messages">0</b>
+    </div>
+    <textarea id="log" readonly></textarea>
+
+<script>
+    // websocket monitor portunda /ws adresinde (sayfa da aynı porttan geliyo)
+    // sayfa dosyadan açılırsa location.host boş oluyo, o yüzden default port
+    var host = location.host;
+    if (host == "") {
+        host = "127.0.0.1:8080";
+    }
+    var ws = new WebSocket("ws://" + host + "/ws");
+
+    var logBox = document.getElementById("log");
+
+    function addLine(line) {
+        logBox.value += line + "\n";
+        logBox.scrollTop = logBox.scrollHeight;   // hep en alta kaydır
+    }
+
+    ws.onopen = function () {
+        document.getElementById("status").innerText = "connected";
+    };
+
+    ws.onmessage = function (event) {
+        var data = JSON.parse(event.data);
+        addLine("[" + data.time + "] [" + data.kind + "] " + data.text);
+        document.getElementById("users").innerText = data.users;
+        document.getElementById("messages").innerText = data.messages;
+    };
+
+    ws.onclose = function () {
+        document.getElementById("status").innerText = "disconnected (refresh the page after the server starts)";
+        addLine("--- connection to server closed ---");
+    };
+
+    ws.onerror = function () {
+        console.log("websocket error");
+    };
+</script>
+</body>
+</html>
