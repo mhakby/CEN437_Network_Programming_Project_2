@@ -3,6 +3,8 @@
 **Name Surname:** Mehmet Hadi Akbey
 **Student ID:** 2021555501
 
+**GitHub:** https://github.com/mhakby/CEN437_Network_Programming_Project_2
+
 A multi-user chat system with a Python TCP chat server, a console Python client,
 a read-only monitoring page that gets live events over WebSocket, and an optional relay
 that adds the `*` prefix to nicknames. The chat part is built on top of the Simple Chat
