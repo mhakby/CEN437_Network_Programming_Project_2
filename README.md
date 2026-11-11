@@ -213,7 +213,7 @@ has the time and the nickname, the join message shows the user list, `/users` sh
 → `T01_public_chat.png`
 
 **T02 – Private chat:** Third client `Ayşe` is connected. `Mhakby` sends `/msg Ali ...`, only Ali gets it
-(Ayşe's window has nothing). Then `/msg Ghost hi` → `User 'Ghost' is not online` error.
+(Ayşe's window has nothing). Then `/msg Ayşe selam` → `User 'Ayşe' is not online` error.
 → `T02_private_chat.png`, `T02_private_error.png`
 
 **T03 – Nicknames:** Two clients ask for `Ali`, the second one becomes `Ali2`. A direct client asking for
